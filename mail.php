@@ -12,7 +12,7 @@ error_reporting(E_ALL);
     [msg] => 333
 )
 */
-require_once '/home/pwingard/hidden.php';//gets my  $email;
+require_once '/home/pwingard/hidden/hidden.php';//gets my email address as $email;
 
 $to      = $email;
 $subject = 'Contact from PWingard.com';
