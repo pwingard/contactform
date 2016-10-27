@@ -12,10 +12,12 @@ error_reporting(E_ALL);
     [msg] => 333
 )
 */
-require_once '/home/pwingard/hidden/hidden.php';//gets my email address as $email;
+//require_once '/home/pwingard/hidden/hidden.php';//gets my email address as $email;
+
+$email=$_POST["email"];
 
 $to      = $email;
-$subject = 'Contact from PWingard.com';
+$subject = 'Contact';
 $message = "From ".$_POST["name"]." at email ". $_POST["email"].". Begin message:".$_POST["msg"];
 $headers = 'From: '.$email . "\r\n" .
     'Reply-To: '.$email . "\r\n" .
